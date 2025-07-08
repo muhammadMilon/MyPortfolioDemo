@@ -1,21 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Favicon (PNG format) -->
-  <link rel="icon" type="image/png" href="images/favicon.jpg">
-  
-  <title>Milon</title>
-  
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milon's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-content">
+            <!-- <div class="logo">Milon</div> -->
+            <ul class="nav-links">
+                <li><a href="#home" data-text="Home">Home</a></li>
+                <li><a href="#about" data-text="About">About</a></li>
+                <li><a href="#projects" data-text="Projects">Projects</a></li>
+                <li><a href="#blog" data-text="Blog">Blog</a></li>
+                <li><a href="#contact" data-text="Contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-  <h1>Welcome to Milon's Portfolio</h1>
-  <p>This is a dummy portfolio site for practice purposes.</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Muhammad</span>
+                    <span class="title-line gradient-text">Milon</span>
+                </h1>
+                <p class="hero-subtitle">Computer Science Student & Aspiring Fullstack Software Engineer</p>
+                <p class="hero-description">
+                    Passionate about creating innovative web solutions and exploring the endless possibilities of
+                    technology.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="profile-container">
+                    <div class="profile-image">
+                        <img src="images/background.jpg" alt="Muhammad Milon" />
+                        <div class="profile-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
 
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Discover my journey and passion</p>
+            </div>
+
+            <!-- 🟢 Layer 1: Intro Text -->
+            <div class="about-intro">
+                <p class="lead">
+                    I'm a Computer Science student at SUST with a deep curiosity for technology and innovation.
+                </p>
+                <p>
+                    From a simple "Hello World", my journey has evolved into building web applications and exploring AI.
+                    I love solving problems and creating intuitive digital experiences.
+                </p>
+                <p>
+                    When I'm not coding, I explore new tech, contribute to open-source, and share what I learn.
+                </p>
+            </div>
+
+            <!-- 🟢 Layer 2: Stats -->
+            <div class="about-stats">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="2">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="15">0</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-label">GitHub Commits</div>
+                </div>
+            </div>
+
+            <!-- 🟢 Layer 3: Skills -->
+            <div class="skill-section">
+                <div class="skill-card">
+                    <h3>Frontend</h3>
+                    <ul class="techList">
+                        <li class="techTag">React</li>
+                        <li class="techTag">JavaScript</li>
+                        <li class="techTag">TypeScript</li>
+                        <li class="techTag">CSS3</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Backend</h3>
+                    <ul class="techList">
+                        <li class="techTag">Express</li>
+                        <li class="techTag">MongoDB</li>
+                        <li class="techTag">Node.js</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Tools</h3>
+                    <ul class="techList">
+                        <li class="techTag">Git</li>
+                        <li class="techTag">Docker</li>
+                        <li class="techTag">AWS</li>
+                        <li class="techTag">VS Code</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Showcasing my latest work and innovations</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <div class="placeholder-icon">🍎</div>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">Live Demo</a>
+                                <a href="#" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Fruit Panda</h3>
+                            <div class="project-status">Featured</div>
+                        </div>
+                        <p class="project-description">
+                            A comprehensive MERN stack platform connecting farmers directly with buyers for seasonal
+                            fruit delivery.
+                            Features real-time inventory management, secure payment processing, and route optimization.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Express</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <div class="placeholder-icon">👨‍💻</div>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">Live Demo</a>
+                                <a href="#" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">CodeKitchen</h3>
+                        <p class="project-description">
+                            An interactive interview preparation platform designed for CSE/SWE students. Features
+                            topic-wise quizzes,
+                            coding challenges, and comprehensive tutorials.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Material-UI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <div class="placeholder-icon">🤖</div>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">Live Demo</a>
+                                <a href="#" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">AI Chat Assistant</h3>
+                        <p class="project-description">
+                            A smart chatbot powered by machine learning algorithms, capable of natural language
+                            processing
+                            and context-aware conversations.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">Flask</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- New Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <div class="placeholder-icon">🎮</div>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">Live Demo</a>
+                                <a href="#" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Tic-Tac-Toe AI</h3>
+                        <p class="project-description">
+                            A classic Tic-Tac-Toe game built with an unbeatable AI using the Minimax algorithm.
+                            Includes a smooth GUI and logic separation for easy understanding.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Swing</span>
+                            <span class="tech-tag">Minimax</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <div class="placeholder-icon">💬</div>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">Live Demo</a>
+                                <a href="#" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Simple ChatRoom</h3>
+                        <p class="project-description">
+                            A client-server chat application built using Java Sockets.
+                            Supports multiple users and features a neat GUI interface with proper message scrolling.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Socket</span>
+                            <span class="tech-tag">Multithreading</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Latest Blog Posts</h2>
+                <p class="section-subtitle">Sharing knowledge and experiences</p>
+            </div>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="blog-placeholder">
+                            <div class="placeholder-icon">📝</div>
+                        </div>
+                        <div class="blog-date">Coming Soon</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3 class="blog-title">My Journey into Full-Stack Development</h3>
+                        <p class="blog-excerpt">
+                            Exploring the challenges and triumphs of learning modern web development technologies...
+                        </p>
+                        <div class="blog-meta">
+                            <span class="blog-category">Development</span>
+                            <span class="blog-read-time">5 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="blog-placeholder">
+                            <div class="placeholder-icon">🎓</div>
+                        </div>
+                        <div class="blog-date">Coming Soon</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3 class="blog-title">Tips for CS Students</h3>
+                        <p class="blog-excerpt">
+                            Essential advice for computer science students navigating their academic journey...
+                        </p>
+                        <div class="blog-meta">
+                            <span class="blog-category">Education</span>
+                            <span class="blog-read-time">3 min read</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    
+
+    <script src="script.js"></script>
 </body>
+
 </html>
